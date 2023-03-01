@@ -1,0 +1,27 @@
+.status-label-table {
+  border: 2px solid black;
+  margin: 1rem 0;
+  width: 50%;
+  & td, th {
+    padding: 1rem;
+    border: 1px solid gray;
+  }
+}
+
+.status-label-heading {
+  background-color: black;
+  color: white;
+}
+
+.status-label-custom::part(badge) {
+  background-color: darkblue;
+  border-color: black;
+  color: white;
+}
+
+.status-label-custom-subtle::part(badge) {
+  color: darkblue;
+  &::before {
+    background-color: black;
+  }
+}
